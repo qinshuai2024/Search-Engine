@@ -3,4 +3,4 @@ parser: parser.cc
 
 .PHONY:clean
 clean:
-	rm -f parse
+	rm -f parser
