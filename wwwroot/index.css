@@ -1,0 +1,85 @@
+
+.container {
+    width: 800px;
+    height: 1000px;
+    margin: 0px auto;
+}
+.container .search {
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.container .search > input {
+    width: 700px;
+    height: 44px;
+    background: white;
+    padding: 12px 87px 12px 16px;
+    box-sizing: border-box;
+    color: #222;
+    border-radius: 10px 0 0 10px;
+    box-shadow: none; 
+    vertical-align: top; 
+    float: left;
+    font-size: 16px;
+    border: 2px solid #C4C7CE;
+    border-right: none;
+}
+
+.container .search > input:focus {
+    /* 取消输入框自带的聚焦效果 */
+    outline: none; 
+    border: 2px solid #4e6ef2;
+    border-right: none;
+}
+
+.container .search > button {
+    width: 100px;
+    height: 44px;
+    margin-left: 0;
+    border: none;
+    color: white;
+    background-color: #4e6ef2;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 17px;
+}
+.container .search > button:hover {
+    background-color: #4662D9;
+}
+
+.container .content > div {
+    width: 100%;
+    margin:0 0 20px 0;
+}
+.container .content .item > a:link {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.container .content .item  a:link {
+    color: #4e6ef2;
+}
+.container .content .item  a:visited {
+    color: #660099;
+}
+.container .content .item > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.container .content .item > p {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+.container .content .item > i {
+    display: block;
+    /* 取消斜体风格 */
+    font-style: normal;
+    color: green;
+    margin: 5px 0 0 0;
+    
+}
