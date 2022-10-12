@@ -510,7 +510,6 @@ void Search(const std::string& query, std::string *json_str);
 
 3. 根据相关性(`weight`)对总的文档排序
    
-
 4. 形成`json`字符串返回
 
    ![image-20221010192727114](https://s2.loli.net/2022/10/10/Mir4IfCHzgNBLKX.png)
@@ -612,12 +611,17 @@ int main()
 
 # 九、前端
 
+获取后端的`json`串，需要使用`JQuery`的`ajax`。然后使用给页面添加标签和内容即可。
 
+模仿百度搜索界面
 
+![image-20221011090851572](https://s2.loli.net/2022/10/11/limUn3b5zpjaGYH.png)
 
+![image-20221011233319509](https://s2.loli.net/2022/10/11/izmj3n6FC8MGeAI.png)
 
+最终效果：
 
-
+![image-20221012102001532](https://s2.loli.net/2022/10/12/k4xmvsfzau7WrGh.png)
 
 
 
