@@ -1,14 +1,35 @@
+#bg {
+    background: no-repeat center center;   /*加载背景图*/   /* 背景图不平铺 */
+    background-size:cover;  /* 让背景图基于容器大小伸缩 */
+    background-attachment: fixed;        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */    //此条属性必须设置否则可能无效/
+    /* 设置背景颜色，背景图加载过程中会显示背景色 */
+}
+
 
 .container {
     width: 800px;
     height: 1000px;
     margin: 0px auto;
+    
+}
+
+.container .myimg {
+    width: 100%;
+    height: 100px;
+    background: url("head3.png") ;
+    background-position: center;
+    background-position-x: 0px;
+    border: none;
+    padding: 0;
+    background-repeat: no-repeat;
 }
 .container .search {
-
-    margin-top: 100px;
+    margin-top: 0;
     margin-bottom: 20px;
+    position: sticky;
+    top: 10px;
 }
+
 .container .search > input {
     width: 700px;
     height: 44px;
@@ -51,8 +72,20 @@
 
 .container .content > div {
     width: 100%;
-    margin:0 0 20px 0;
+    margin:0 0 15px 0;
 }
+
+.container .content .item {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid aliceblue;
+}
+.container .content .item:hover {
+    border: 2px solid #696969;
+
+}
+
 .container .content .item > a:link {
     display: block;
     text-decoration: none;

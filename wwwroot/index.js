@@ -42,3 +42,5 @@ function BuildHtml(data) {
         div_lable.appendTo(content);
     }
 }
+let bg_img=["bgg1.jpg","bgg2.jpg","bgg3.jpg","bgg4.jpg"] 
+document.getElementById("bg").style.backgroundImage="url("+bg_img[Math.floor(Math.random()*(bg_img.length))]+")";
