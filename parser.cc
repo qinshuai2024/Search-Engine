@@ -153,7 +153,7 @@ bool ParseFile(const std::vector<std::string>& file_list, std::vector<DocInfo_t>
         if (!GetTitle(total_info, &file_info.title)) {
             continue;
         }
-        // 2.2 获取body中的内容
+        // 2.2 获取所有正文中的内容
         if (!GetContent(total_info, &file_info.content)) {
             continue;
         }
